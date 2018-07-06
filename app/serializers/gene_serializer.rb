@@ -1,3 +1,3 @@
 class GeneSerializer < ActiveModel::Serializer
-  attributes :id, :"artsey-id", :name, :description, :image, :artworks, :artists
+  attributes :id, :artsey_id, :name, :description, :thumbnail, :artworks_link, :artists_link
 end

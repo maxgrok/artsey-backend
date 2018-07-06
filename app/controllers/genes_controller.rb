@@ -1,2 +1,0 @@
-class GenesController < ApplicationController
-end
