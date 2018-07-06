@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artsey-id: MyString
+  title: MyString
+  contemporary_medium: MyString
+  thumbnail: MyString
+  large-image: MyString
+  square-image: MyString
+
+two:
+  artsey-id: MyString
+  title: MyString
+  contemporary_medium: MyString
+  thumbnail: MyString
+  large-image: MyString
+  square-image: MyString
