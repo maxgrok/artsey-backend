@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_06_171050) do
+ActiveRecord::Schema.define(version: 2018_07_10_200855) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,14 @@ ActiveRecord::Schema.define(version: 2018_07_06_171050) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.string "username"
+    t.string "artsey_link"
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "genes", force: :cascade do |t|
     t.string "artsey_id"
     t.string "name"
@@ -51,6 +59,14 @@ ActiveRecord::Schema.define(version: 2018_07_06_171050) do
     t.string "thumbnail"
     t.string "artworks_link"
     t.string "artists_link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
+    t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
